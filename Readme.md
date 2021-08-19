@@ -1,0 +1,16 @@
+# MAVEx Hierachical Model
+
+## Preprocessing
+Please download the image features from [here](https://mavex.s3.us-east-2.amazonaws.com/new_image_features.zip) and unzip as 'image_features' <br>
+Please download the image MAVEx features by following operations:
+(1) mkdir h5py_accumulate.
+(2) download [file1](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_train_qid_ans2idx.pkl) to h5py_accumulate.
+(3) download [file2](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_train.hdf5) to h5py_accumulate.
+(4) download [file1](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_val_qid_ans2idx.pkl) to h5py_accumulate.
+(5) download [file1](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_val.hdf5) to h5py_accumulate.  <br>
+Please download the vilbert pretrained model from [here](https://mavex.s3.us-east-2.amazonaws.com/pytorch_model_4.bin)<br>
+``mkdir save''<br>
+
+## Training
+(1) Train by runnning <br>
+``CUDA_VISIBLE_DEVICES=0 ft_mavex.py --save_name demo --seed 7777 --from_pretrained pytorch_model_4.bin --num_epochs 120
