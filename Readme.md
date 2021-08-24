@@ -1,4 +1,4 @@
-# MAVEx Hierachical Model
+# MAVEx Hierachical Model (Not official, still ongoing work)
 
 ## Preprocessing
 Please download the image features from [here](https://mavex.s3.us-east-2.amazonaws.com/new_image_features.zip) and unzip as 'image_features' <br>
