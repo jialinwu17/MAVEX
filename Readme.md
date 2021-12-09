@@ -1,4 +1,5 @@
-# MAVEx Model 
+# Multi-Modal Answer Validation for Knowledge-Based VQA
+By Jialin Wu, Jiasen Lu, Ashish Sabharwal and Roozbeh Mottaghi
 
 
 
