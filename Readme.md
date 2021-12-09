@@ -1,9 +1,22 @@
 # Multi-Modal Answer Validation for Knowledge-Based VQA
 By Jialin Wu, Jiasen Lu, Ashish Sabharwal and Roozbeh Mottaghi
 
+## Installation
+0. Requirements
 
+   We implement this codebase on Ubuntu 18.04.5 LTS with TITAN V GPUs.
 
+1. Clone this repository
 
+   ```
+   git clone git@github.com:JialinWu17/MAVEX.git
+   ```
+   
+2. Using `conda`, create an environment
+   As the implementation is based on ViLBERT-multi-task system, we require a similar virtual environment. Please refer to the Repository Setup step in [ViLBERT](https://github.com/facebookresearch/vilbert-multi-task) repository 
+   ```
+   conda env create --file environment.yml --name thor-ivn
+   ```
 
 ## Preprocessing
 Please download the image features from [here](https://mavex.s3.us-east-2.amazonaws.com/new_image_features.zip) and unzip as 'image_features' <br>
