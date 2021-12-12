@@ -19,6 +19,7 @@ In this project, we present **M**ulti-modal **A**nswer **V**alidation using **Ex
    
 ## Data Preparation
 0. Object detection features and base ViLBERT pretrained model.
+
     As OK-VQA test set contains images that are used in both the object detection module that provides bottom-up attentions and the official released ViLBERT pretrained model, we carefully removed the OK-VQA test images from Visual Genome and COCO dataset and re-train the ResNeXT-152 based Faster RCNN object detector and then the  ViLBERT model from scratch following the default hyperparameters.
     
     The object features can be downloaded from [here](https://mavex.s3.us-east-2.amazonaws.com/new_image_features.zip). Aftr downloading it, please unzip it as 'image_features'
@@ -44,7 +45,18 @@ Train by runnning <br>
 python ft_mavex.py --save_name demo --seed 7777 --from_pretrained pytorch_model_4.bin --num_epochs 75
 ```
 
-## Testing
-```
+## Models and Output files
+We publish the MAVEx finetuned model at [here](http://www.cs.utexas.edu/~jialinwu/mavex.bin) and the output results can be downloaded [here](https://drive.google.com/drive/folders/1V4hgm1OXRvD7TlFADEXtUMHxKi6ePDc8?usp=sharing)
 
+## Citation
+
+If you find this project useful in your research, please consider citing our paper:
+
+```
+@inproceedings{khz2021interact,
+  author = {Wu, Jialin and Lu, Jiasen and Sabharwal, Ashish and Mottaghi, Roozbeh},
+  title = {{M}ulti-{M}odal {A}nswer {V}alidation for {K}nowledge-Based {VQA}},
+  booktitle = {AAAI},	    
+  year = {2022}
+}
 ```
