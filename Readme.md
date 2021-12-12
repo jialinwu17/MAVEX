@@ -26,16 +26,25 @@ In this project, we present **M**ulti-modal **A**nswer **V**alidation using **Ex
     The ViLBERT pretrained model can be downloaded from [here](https://mavex.s3.us-east-2.amazonaws.com/pytorch_model_4.bin)
     
 1. Google Image features.
+
     We query Google Image search engine for the external visual knowledge and we process the retrieved images using the object detection module form the last step. Please download the processed image features and idx files following the instructions in below.
     (1) mkdir h5py_accumulate. <br>
-    (2) download [train_idx](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_train_qid_ans2idx.pkl) to h5py_accumulate.
-    (3) download [train_features](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_train.hdf5) to h5py_accumulate.
-    (4) download [val_idx](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_val_qid_ans2idx.pkl) to h5py_accumulate.
-    (5) download [val_features](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_val.hdf5) to h5py_accumulate.
+    (2) download [train_idx](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_train_qid_ans2idx.pkl) to h5py_accumulate.<br>
+    (3) download [train_features](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_train.hdf5) to h5py_accumulate.<br>
+    (4) download [val_idx](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_val_qid_ans2idx.pkl) to h5py_accumulate.<br>
+    (5) download [val_features](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_val.hdf5) to h5py_accumulate.<br>
     
 2. Retrieved Knowledge
+
     Please download retrieved knowledge from [here](https://drive.google.com/file/d/1F_tKHOC5HIHdmm9KnUJV7wYMBZEgHQI0/view?usp=sharing)<br>
     
 ## Training
-(1) Train by runnning <br>
-``CUDA_VISIBLE_DEVICES=0 ft_mavex.py --save_name demo --seed 7777 --from_pretrained pytorch_model_4.bin --num_epochs 120
+Train by runnning <br>
+```
+python ft_mavex.py --save_name demo --seed 7777 --from_pretrained pytorch_model_4.bin --num_epochs 75
+```
+
+## Testing
+```
+
+```
