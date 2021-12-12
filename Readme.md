@@ -28,7 +28,7 @@ In this project, we present **M**ulti-modal **A**nswer **V**alidation using **Ex
     
 1. Google Image features.
 
-    We query Google Image search engine for the external visual knowledge and we process the retrieved images using the object detection module form the last step. Please download the processed image features and idx files following the instructions in below.
+    We query Google Image search engine for the external visual knowledge and we process the retrieved images using the object detection module form the last step. Please download the processed image features and idx files following the instructions in below. <br>
     (1) mkdir h5py_accumulate. <br>
     (2) download [train_idx](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_train_qid_ans2idx.pkl) to h5py_accumulate.<br>
     (3) download [train_features](https://mavex.s3.us-east-2.amazonaws.com/h5py_accumulate/image_features/image_train.hdf5) to h5py_accumulate.<br>
