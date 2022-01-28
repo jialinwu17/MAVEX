@@ -53,7 +53,7 @@ We publish the MAVEx finetuned model at [here](http://www.cs.utexas.edu/~jialinw
 If you find this project useful in your research, please consider citing our paper:
 
 ```
-@inproceedings{khz2021interact,
+@inproceedings{wu2022multi,
   author = {Wu, Jialin and Lu, Jiasen and Sabharwal, Ashish and Mottaghi, Roozbeh},
   title = {{M}ulti-{M}odal {A}nswer {V}alidation for {K}nowledge-Based {VQA}},
   booktitle = {AAAI},	    
